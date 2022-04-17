@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cf540676fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>
+      AC Repair and Services & Gas Filling in Delhi NCR, Ghaziabad, Noisa ...
+    </title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Frijole&family=Mulish:wght@500&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Frijole", cursive;
+        font-family: "Mulish", sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      li {
+        list-style: none;
+      }
+      i {
+        margin-right: 8px;
+        margin-left: 8px;
+      }
+
+      .header {
+        padding-bottom: 20px;
+        z-index: 100;
+        background-color: rgb(255, 255, 255);
+      }
+      .navbar-upper {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 85%;
+        padding-top: 4px;
+        padding-bottom: 4px;
+      }
+      .navbar-upper p {
+        width: 80%;
+      }
+      .navbar-upper a {
+        border-radius: 40px;
+        background-color: #200202;
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+      }
+      .navbar-middle {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 85%;
+      }
+      .navbar-lower {
+        top: 0px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 85%;
+      }
+      #navbar {
+        overflow: hidden;
+        background-color: rgb(255, 255, 255);
+        padding-left: 10%;
+        padding-right: 10%;
+        height: 70px;
+      }
+
+      #navbar a {
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .logo img {
+        width: 80px;
+        border-radius: 60px;
+      }
+      .menu {
+        display: flex;
+        gap: 1em;
+      }
+      .menu li:hover,
+      .menu li a:hover {
+        background-color: #200202;
+        border-radius: 5px;
+        color: white;
+        transition: 0.3s ease;
+      }
+
+      .menu li a {
+        height: 100%;
+        width: 100%;
+        padding: 8px 20px;
+      }
+      .menu li {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 8px 0px;
+        border-radius: 8px;
+      }
+
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      .hamburger {
+        display: none;
+        font-size: 24px;
+        user-select: none;
+      }
+      .home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+      }
+      .footer {
+        padding-top: 80px;
+        position: relative;
+        bottom: 0px;
+        padding-bottom: 30px;
+        right: 0px;
+        left: 0px;
+        z-index: -1;
+        background-color: #200202;
+        color: white;
+      }
+      .footer a {
+        color: white;
+      }
+      .footer-upper {
+        padding-bottom: 30px;
+        width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .quick-links {
+        padding: 10px;
+      }
+      .quick-links h2 {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+      }
+      .quick-links li {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+      }
+      .footer-lower {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+      }
+      .footer-lower p {
+        color: white;
+      }
+
+      @media (max-width: 1300px) {
+        .footer-upper {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .navbar-upper {
+          display: flex;
+          align-items: center;
+          justify-content: right;
+        }
+        .navbar-upper a {
+          margin-right: 0px;
+          border: 2px solid;
+        }
+        .navbar-upper p {
+          display: none;
+        }
+        .menu {
+          display: none;
+          position: absolute;
+          right: 0;
+          background-color: rgb(255, 255, 255);
+          left: 0;
+          text-align: center;
+          padding: 16px 0;
+        }
+
+        .menu li {
+          width: 40%;
+          border-radius: 0px;
+          margin: auto;
+          margin-bottom: 38px;
+        }
+        input[type="checkbox"]:checked ~ .menu {
+          display: block;
+          height: 80vh;
+        }
+        .hamburger {
+          display: block;
+        }
+
+        .quick-links li {
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: left;
+        }
+        .footer {
+          font-size: 12px;
+        }
+        .footer-upper {
+          padding-bottom: 30px;
+          width: 85%;
+          margin: auto;
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .text-slide {
+        overflow: hidden;
+        width: 100%;
+        background-color: #200202;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0px;
+        color: white;
+      }
+
+      .sliding {
+        animation: marquee 38s linear infinite;
+        letter-spacing: 4px;
+        white-space: nowrap;
+        display: flex;
+      }
+      .sliding p,
+      .sliding li {
+        margin-right: 15px;
+        font-size: 12px;
+      }
+      span {
+        color: red;
+      }
+
+      @keyframes marquee {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar-upper">
+        <p>We have more than 15 years of experience</p>
+        <a href="tel:+91 8285003919"><i class="fa-solid fa-phone"></i></a>
+        <a href="mailto: shoaibahmad8285@gmail.com"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a href="/"><i class="fa-solid fa-location-dot"></i></a>
+      </nav>
+      <nav class="navbar-middle">
+        <div class="logo"><img src="dt-logo.jpeg" alt="" /></div>
+      </nav>
+      <nav id="navbar" class="navbar-lower">
+        <ul class="nav-links">
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Service</a></li>
+            <li><a href="/">Pricing</a></li>
+            <li><a href="/">AMC</a></li>
+            <li><a href="/">Contact</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <section class="home">Landing Page</section>
+    <footer class="footer">
+      <div class="footer-upper">
+        <div class="quick-links">
+          <h2>Quick Links</h2>
+          <li>
+            <i class="fa-solid fa-greater-than"></i><a href="/">AC AMC T&C</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i><a href="/">Location</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i><a href="/">Our Blog</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">24x7 Ac service T & C</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Lg AC Reapir and Service</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Ac Repair Course</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Onida AC Reapir and Service</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Panasonic AC Reapir and Service</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Samsung AC Reapir and Service</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Voltas AC Reapir and Service</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Whirlpool AC Reapir and Service</a>
+          </li>
+        </div>
+        <div class="quick-links">
+          <h2>Our Brand Service</h2>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Bluestar AC Reapir and Service</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Carrier AC Reapir and Service</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Daikin AC Reapir and Service</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Godrej AC Reapir and Service</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Haier AC Reapir and Service</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Hitachi AC Reapir and Service</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Split And Window Second hand ac for sale</a>
+          </li>
+        </div>
+        <div class="quick-links">
+          <h2>Area We Cover in Delhi</h2>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">AC on Rent in Delhi</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Ac on Rent in Laxmi Nagar</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">Ac on Rent in South Delhi</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">AC on rent in New Ashok Nagar</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">AC on Rent in Mukherjee Nagar</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">AC on rent in Noida</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">AC on rent in Greater Noida</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">AC on rent in Noida Sector 62</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i
+            ><a href="/">AC on rent in Noida Sector 76</a>
+          </li>
+        </div>
+        <div class="quick-links">
+          <h2>Our Service Location</h2>
+          <li><i class="fa-solid fa-greater-than"></i><a href="/">Delhi</a></li>
+          <li><i class="fa-solid fa-greater-than"></i><a href="/">Noida</a></li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i> <a href="/">Ghaziabad</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i><a href="/">Faridabad</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-greater-than"></i><a href="/">Gurgaon</a>
+          </li>
+        </div>
+      </div>
+      <div class="footer-lower">
+        <p>
+          2022 © All Rights Reserved | Designed and Developed by @dhoolkarnain
+        </p>
+      </div>
+    </footer>
+    <div class="text-slide">
+      <div class="sliding">
+        <p>
+          Air conditioner brand for we provide
+          <span> (24x7 service) </span>
+        </p>
+        <li>Blue Star</li>
+        <li>Carrier</li>
+        <li>Daikin</li>
+        <li>Electrolux</li>
+        <li>Godrej</li>
+        <li>Haire</li>
+        <li>Hitachi</li>
+        <li>Kelvinator</li>
+        <li>LG</li>
+        <li>Mitsubishi</li>
+        <li>Panasonic</li>
+        <li>Samsung</li>
+        <li>Videocon</li>
+        <li>Voltas</li>
+        <li>Whirlpool</li>
+        <span>and many more</span>
+      </div>
+    </div>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar = document.getElementById("navbar");
+
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>
